@@ -208,6 +208,7 @@ img {
 }
 
 .resume__button-link{
+  cursor: pointer;
   width: max-content;
   color: var(--text-color);
   display: inline-flex;
@@ -341,7 +342,21 @@ img {
   width: 20px;
   fill: var(--title-color);
   transition: fill 1s;
+  animation: spin 10s infinite linear, fadeIn 2s infinite linear;
 }
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@keyframes fadeIn {
+  0% {opacity: .35;}
+  50% {opacity: .5;}
+  75% {opacity: .75;}
+  100% {opacity: .20;}
+}
+
 
 .home__star-1{
   top: 2.5rem;
@@ -518,6 +533,74 @@ img {
   bottom: 7rem;
 }
 
+
+/*----- ↓ 입력값 오류 시 경고문 ↓ ---------------------*/
+/* The Modal (background) */
+.modal {
+  display: none;  /* Hidden by default */
+  position: fixed;   /* Stay in place */
+  z-index: 1;   /* Sit on top */
+  padding-top: 5rem;  /* Location of the box */
+  padding-bottom: 1rem;
+  left: 0;
+  top: 0;
+  width: 100%;  
+  height: 100%;
+  overflow: auto;   /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);   /* Black w/ opacity */
+
+}
+/* Modal Content */
+.modal-content {
+  background-color: var(--container-color);
+  margin: auto;
+  padding: 20px;
+  border: 0.06rem solid var(--container-color);
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: var(--container-color) -0.06rem 0.1rem 0.1rem 0.06rem;
+}
+#modalText {
+  padding-top: 8px;
+  padding-right: 5px;
+  font-size: 18px;
+  color: var(--title-color);
+}
+.modal-wrong {
+  border: 2px solid red;
+}
+.modal-correct {
+  border: 2px solid green;
+}
+/* The Close Button */
+.close {
+  color: var(--text-color);
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.close:hover {
+  color: #d41111;
+}
+/*----- ↑ 입력값 오류 시 경고문 ↑ ---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 350px){
@@ -676,8 +759,8 @@ img {
   }
 
 
-  .certificates__container,
-  .references__container{
+  .references__container,
+  .education__container{
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -699,7 +782,7 @@ img {
 .neon b{
   font-family: foo3;
   color: var(--text-color);
-  text-shadow: 0 -20px 100px, 0 0 2px, 0 0 1em var(--neon-color), 0 0 0.5em var(--neon-color), 0 0 0.1em var(--neon-color), 0 0.5rem 0.15rem var(--body-color);
+  text-shadow: 0 -20px 100px, 0 0 1px, 0 0 1em var(--neon-color), 0 0 0.5em var(--neon-color), 0 0 0.1em var(--neon-color), 0 0.5rem 0.10rem var(--body-color);
 }
 
 .neon b span{
@@ -721,7 +804,9 @@ img {
 .neon b span:nth-child(5){
   animation: blink linear infinite 4.5s;
 }
-
+.neon b span:nth-child(6){
+  animation: blink linear infinite 6.5s;
+}
 
 
 @keyframes blink{
@@ -730,7 +815,7 @@ img {
     text-shadow: inherit;
   }
   79% {
-    color: #333;
+    color: var(--container-color);
   }
   80% {
     text-shadow: none;
@@ -740,7 +825,7 @@ img {
     text-shadow: inherit;
   }
   82% {
-    color: #333;
+    color: var(--container-color);
     text-shadow: inherit;
   }
   83% {
@@ -748,7 +833,7 @@ img {
     text-shadow: inherit;
   }
   92% {
-    color: #333;
+    color: var(--container-color);
     text-shadow: inherit;
   }
   92.5% {
@@ -756,3 +841,4 @@ img {
     text-shadow: inherit;
   }
 }
+
