@@ -20,7 +20,7 @@
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
         <nav class="nav container">
-          <a href="#" class="nav__logo">Heonwoo Lee</a>
+          <a href="#" class="nav__logo">Résumé</a>
           <div class="nav__menu">
             <ul class="nav__list">
 
@@ -43,14 +43,14 @@
               </li>
 
               <li class="nav__item">
-                <a href="#education" class="nav__link">
-                  <i class="ri-book-3-line"></i>
+                <a href="#work" class="nav__link">
+                  <i class="ri-briefcase-3-line"></i>
                 </a>
               </li>
 
               <li class="nav__item">
-                <a href="#work" class="nav__link">
-                  <i class="ri-briefcase-3-line"></i>
+                <a href="#education" class="nav__link">
+                  <i class="ri-book-3-line"></i>
                 </a>
               </li>
 
@@ -73,12 +73,15 @@
                 <div class="home__perfil">
                   <img src="./assets/imgs/photo.jpg" alt="home image" class="home__img">
                 </div>
-                <div class="neon">
-                      <svg class="home__star-1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 
-                        50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z" />
-                      </svg>
-                </div>
+
+                <svg class="home__star-1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                  
+                  <path d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 
+                  50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z" />
+  
+                 
+                </svg>
+
                 <svg class="home__star-2" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                 <path d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 
                 50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z" />
@@ -92,7 +95,7 @@
               </h1>
 
               <h2 class="home__profession neon">
-                <b><span></span><span></span><span></span><span>St</span>ructur<span>a</span>l Enginee<span>r</span></b> 
+                <b><span></span><span></span><span></span><span>S</span>truc<span>t</span>ur<span>a</span>l Enginee<span>r</span></b> 
               </h2>
             </div>
 
@@ -105,9 +108,9 @@
             <h2 class="section__title">PERSONAL INFO</h2>
             <div class="about__container grid">
               <p>
-                Hi, I'm Anne Evone, based in Lima - Perú, I do 
-                custom work and do market research before starting 
-                any project, giving you a fair advantage in 
+                Hi, I'm Heonwoo Lee, based in Seoul, South Korea. I do 
+                structural engineering support for construction sites and
+                research various projects, giving you a fair advantage in 
                 delivering the best outcome for the client.
               </p>
 
@@ -117,15 +120,15 @@
 
               <ul class="about__social">
                 <li>
-                  <a href="https://github.com/" target="_blank" class="about__social-link">Github</a>
+                  <a href="https://github.com/" target="_blank" class="about__social-link"><i class="ri-github-line"></i>Github</a>
                 </li>
 
                 <li>
-                  <a href="https://dribbble.com/" target="_blank" class="about__social-link">Dribble</a>
+                  <a href="https://instagram.com/" target="_blank" class="about__social-link"><i class="ri-instagram-line"></i>instagram</a>
                 </li>
 
                 <li>
-                  <a href="https://www.linkedin.com/" target="_blank" class="about__social-link">Linkedin</a>
+                  <a href="https://www.linkedin.com/" target="_blank" class="about__social-link"><i class="ri-linkedin-box-line"></i>Linkedin</a>
                 </li>
               </ul>
 
@@ -133,6 +136,53 @@
 
 
           </section>
+
+          <!--==================== CERTIFICATES ====================-->
+          <section class="certificates section">
+            <h2 class="section__title">CERTIFICATES</h2>
+
+            <div class="certificates__container grid">
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> Modern Web Development
+                </h2>
+                <div class="resume__data">
+                  <span>Master Web Inc -  2015</span>
+                  <span class="resume__button-link" id="k1_blur" onclick="viewPop(this);">
+                    View<i class="ri-external-link-line"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i>Component Design
+                </h2>
+                <div class="resume__data">
+                  <span>Design & Company -  2020</span>
+                  <span class="resume__button-link" id="k2_blur" onclick="viewPop(this);">
+                    View<i class="ri-external-link-line"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i>E.I.T
+                </h2>
+                <div class="resume__data">
+                  <span>2013.10.31 - Texas, U.S.A </span>
+                  <span class="resume__button-link" id="eit" onclick="viewPop(this);">
+                    View<i class="ri-external-link-line"></i>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
 
           <!--==================== SKILLS ====================-->
           <section class="skills section" id="skills">
@@ -175,91 +225,7 @@
 
           </section>
 
-          <!--==================== EDUCATION ====================-->
-          <section class="education section" id="education">
-            <h2 class="section__title">EDUCATION</h2>
-            <div class="education__container grid">
 
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> Master Degree (석사)
-                </h2>
-                <div class="resume__data">
-                  <span> Perú - University </span>
-                  <span> 2012 - 2013 </span>
-                  <a href="./assets/pdf/cm_blur.pdf"  target="_blank" class="resume__button-link">
-                    View<i class="ri-external-link-line"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> Bachelor Degree (학사)
-                </h2>
-                <div class="resume__data">
-                  <span> Perú - University </span>
-                  <span> 2008.05.31 - 2012.05.31 </span>
-                  <a href="./assets/pdf/cb_blur.pdf" target="_blank" class="resume__button-link">
-                    View<i class="ri-external-link-line"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> High school 1
-                </h2>
-                <div class="resume__data">
-                  <span> Perú - University </span>
-                  <span> 2012 - 2017 </span>
-                  <a href="#" class="resume__button-link">
-                    View<i class="ri-external-link-line"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> high school School 2
-                </h2>
-                <div class="resume__data">
-                  <span> Perú - University </span>
-                  <span> 2012 - 2017 </span>
-                  <a href="#" class="resume__button-link">
-                    View<i class="ri-external-link-line"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> middle School
-                </h2>
-                <div class="resume__data">
-                  <span> Perú - University </span>
-                  <span> 2012 - 2017 </span>
-                  <a href="#" class="resume__button-link">
-                    View<i class="ri-external-link-line"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> elementary school
-                </h2>
-                <div class="resume__data">
-                  <span> Perú - University </span>
-                  <span> 2012 - 2017 </span>
-                  <a href="#" class="resume__button-link">
-                    View<i class="ri-external-link-line"></i>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-          </section>
         </div> <!------resume__left END ------------------->
 
         <div class="resume__right">
@@ -271,11 +237,26 @@
 
               <div>
                 <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> Web Developer Director
+                  <i class="ri-arrow-drop-right-line"></i> 롯데건설(주)
 
                 </h2>
                 <div class="resume__data">
-                  <span>Adobe - Spain / 2012 - 2017</span>
+                  <span>2023.04.16 - 현재 / 기술연구원 건축기술연구팀</span>
+                  <p>
+                    I worked in the company providing experience 
+                    in the labor field and doing quality work.
+                  </p>
+                  <span>2022.10.14 - 2023.04.15 / KT구의역세권 현장</span>
+                  <p>
+                    I worked in the company providing experience 
+                    in the labor field and doing quality work.
+                  </p>
+                  <span>2020.08.01 - 2022.10.13 / 기술연구원 건축기술연구팀</span>
+                  <p>
+                    I worked in the company providing experience 
+                    in the labor field and doing quality work.
+                  </p>
+                  <span>2017.08.01 - 2020.07.31 / 응암2구역 주택재개발사업 현장</span>
                   <p>
                     I worked in the company providing experience 
                     in the labor field and doing quality work.
@@ -285,7 +266,7 @@
 
               <div>
                 <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> Design Manager
+                  <i class="ri-arrow-drop-right-line"></i> (주)창민우구조컨설탄트
                 </h2>
                 <div class="resume__data">
                   <span>Figma - Perú / 2020 - 2022</span>
@@ -296,76 +277,88 @@
                 </div>
               </div>
 
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> Software Engineer
-                </h2>
-                <div class="resume__data">
-                  <span>Adobe - Spain / 2012 - 2017</span>
-                  <p>
-                    I worked in the company providing experience 
-                    in the labor field and doing quality work.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i>
-                </h2>
-                <div class="resume__data">
-                  
-                </div>
-              </div>
-
 
             </div>
           </section>
 
-          <!--==================== CERTIFICATES ====================-->
-          <section class="certificates section">
-            <h2 class="section__title">CERTIFICATES</h2>
-
-            <div class="certificates__container grid">
+          <!--==================== EDUCATION ====================-->
+          <section class="education section" id="education">
+            <h2 class="section__title">EDUCATION</h2>
+            <div class="education__container grid">
 
               <div>
                 <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i> Modern Web Development
+                  <i class="ri-arrow-drop-right-line"></i> Master Degree (석사)
                 </h2>
                 <div class="resume__data">
-                  <span>Master Web Inc -  2015</span>
-                  <a href="#" target="_blank" class="resume__button-link">
-                    View <i class="ri-external-link-line"></i>
-                  </a>
+                  <span> Virginia Tech University </span>
+                  <span> Civil Engineering </span>
+                  <span> 2012.08.01 - 2013.12.19 </span>
+                  <span class="resume__button-link" id="cm_blur" onclick="viewPop(this);">
+                    View<i class="ri-external-link-line"></i>
+                  </span>
                 </div>
               </div>
 
               <div>
                 <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i>Component Design
+                  <i class="ri-arrow-drop-right-line"></i> Bachelor Degree (학사)
                 </h2>
                 <div class="resume__data">
-                  <span>Design & Company -  2020</span>
-                  <a href="#" target="_blank" class="resume__button-link">
-                    View <i class="ri-external-link-line"></i>
-                  </a>
+                  <span> Texas A&M University </span>
+                  <span> Civil Engineering </span>
+                  <span> 2008.05.31 - 2012.05.31 </span>
+                  <span class="resume__button-link" id="cb_blur" onclick="viewPop(this);">
+                    View<i class="ri-external-link-line"></i>
+                  </span>
                 </div>
               </div>
 
               <div>
                 <h2 class="resume__title">
-                  <i class="ri-arrow-drop-right-line"></i>Layout Of Structural Websites
+                  <i class="ri-arrow-drop-right-line"></i> High school
                 </h2>
                 <div class="resume__data">
-                  <span>University of Peru -  2022</span>
-                  <a href="#" target="_blank" class="resume__button-link">
-                    View <i class="ri-external-link-line"></i>
-                  </a>
+                  <span> Perú - University </span>
+                  <span> 2012 - 2017 </span>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> high school
+                </h2>
+                <div class="resume__data">
+                  <span> Perú - University </span>
+                  <span> 2012 - 2017 </span>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> middle School
+                </h2>
+                <div class="resume__data">
+                  <span> Perú - University </span>
+                  <span> 2012 - 2017 </span>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="resume__title">
+                  <i class="ri-arrow-drop-right-line"></i> elementary school
+                </h2>
+                <div class="resume__data">
+                  <span> Perú - University </span>
+                  <span> 2012 - 2017 </span>
                 </div>
               </div>
 
             </div>
           </section>
+
+
+
 
           <!--==================== REFERENCES ====================-->
           <section class="references section">
@@ -436,7 +429,24 @@
       <i class="ri-arrow-up-line"></i>
     </a>
 
+
+      <!-----↓ 입력값 오류 시 경고문 ↓---------------->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+      </div>
+    </div>
+
+
+
+
+
     <!--=============== MAIN JS ===============-->
     <script src="./script.js"></script>
   </body>
+
+
 </html>
