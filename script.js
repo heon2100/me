@@ -57,3 +57,28 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+var modalContent = document.querySelector(".modal-content");
+var modalText = document.querySelector("#modalText");
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+
+// in Pop up display document ------------------
+function viewPop(e){
+  let Id = document.getElementById(e.getAttribute('id')).getAttribute('id'); //클릭한거 아이디 가져오기
+  modal.style.display = "block";
+  modalText.innerHTML = `<img src="./assets/pdf/${Id}.png">`;
+}
+// When the user clicks on <span> (x), close the modal-----------
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
